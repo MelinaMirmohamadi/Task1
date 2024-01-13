@@ -45,10 +45,9 @@ def count_words_in_wikipedia_page(page_title):
     else:
         return 0
 
-# گرفتن تمام عناوین صفحات
 all_titles = get_all_wikipedia_titles()
 
-total_word_count = 0  # متغیر برای جمع کل کلمات
+total_word_count = 0 
 
 for title in all_titles:
     word_count = count_words_in_wikipedia_page(title)
